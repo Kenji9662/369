@@ -61,7 +61,6 @@ public class Manager : MonoBehaviour
     }
 
 
-
     void Update()
     {
         if (PlaneCount < PlanePos.Count)
@@ -87,9 +86,7 @@ public class Manager : MonoBehaviour
 
         if (mARRaycastManager.Raycast(pos, hits, trackableType))
         {
-            var hitsPose = hits[0].pose;
-
-            objEvent _objEvent = hitsPose.transform.GetComponent<objEvent>();
+            objEvent _objEvent = hits[0].transform.GetComponent<objEvent>();
 
             if (_objEvent != null)
             {
@@ -97,6 +94,7 @@ public class Manager : MonoBehaviour
             }
         }
     }
+
 
     // i = Spawn Object Qty 
     IEnumerator SpawnObjFun(int i, Transform pos)
