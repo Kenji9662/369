@@ -15,7 +15,7 @@ public class Manager : MonoBehaviour
     //Number List
     public static List<string> nList = new List<string>() { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 
-    // random value & Get Pointer to Get Random NumberObj
+    // random value & Get Pointer
     public int ranNum; 
     public string  spawnPointer = "";
 
